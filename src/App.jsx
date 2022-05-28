@@ -23,7 +23,7 @@ function App() {
       <NavFixed />
       <Container>
         <Row>
-          <Col md="4">
+          <Col sm="5">
             {/* Row 1 con texto */}
             <Row>
               <TextIntro />
@@ -43,7 +43,7 @@ function App() {
             </Row>
           </Col>
           {/* Columna 2 */}
-          <Col md="8">
+          <Col sm="7" className="d-none d-sm-block">
             {/* Row 1 con texto */}
             <Row>{/* <Header/> */}</Row>
             {/* Row 2 con grafico entero */}

@@ -25,7 +25,6 @@
   padding: 5px;
     font-family: 'Montserrat';
       text-align: center;
-
 }
 
 .indice-text{
@@ -36,11 +35,7 @@ font-family: 'Montserrat';
   font-size: 48px;
   line-height: 60px;
   /* identical to box height, or 125% */
-
-
-
   color: #6979F8;
-
 }
 
 .card-title{
@@ -92,7 +87,7 @@ padding: 15px;
 justify-content: space-between;
 margin: auto 0.5rem;
 }
-@media(min-width:570px){
+@media(min-width:576px){
   .navButton{
     display:none;
   }
