@@ -1,4 +1,5 @@
 import "./styles/fixed/app.css";
+
 import NavFixed from "./fixed/navbar/NavFixed";
 import { Container, Row, Col } from "react-bootstrap";
 import TextIntro from "./content/text/TextIntro";
