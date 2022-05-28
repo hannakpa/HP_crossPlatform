@@ -3,11 +3,12 @@ import { Col, Row, Container } from "react-bootstrap";
 
 function GraphicBox() {
   const states = {
-    labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun"],
+    labels: ["Screens", "PCs", "Phones"],
     datasets: [
       {
         label: "Graphic",
-        data: [26, 26.5, 27, 26.6, 26.5, 26.3, 26, 25.8],
+        data: [2562, 3642, 543],
+        backgroundColor: ["#007AFF", "#FB8832", "#9013FE"],
         tension: 0.5,
         pointBorderColor: "#6979F8",
         pointBackgroundColor: "#6979F8",
@@ -36,7 +37,7 @@ function GraphicBox() {
 
   return (
     <div className="graphic-box">
-      <p className="card-title">Transactions Last Year</p>
+      <p className="card-title">Conversion</p>
 
       <PieGraph chartOptions={chartOptions} states={states} />
     </div>
