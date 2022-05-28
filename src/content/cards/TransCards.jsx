@@ -1,5 +1,3 @@
-import { Col } from "react-bootstrap";
-
 function TransCards({ info }) {
   let showCards = info.map((card, index) => {
     return (

@@ -3,6 +3,7 @@ import NavFixed from "./fixed/navbar/NavFixed";
 import { Container, Row, Col } from "react-bootstrap";
 import TextIntro from "./content/text/TextIntro";
 import TransCards from "./content/cards/TransCards";
+import GraphicBox from "./content/charts/GraphicBox";
 
 const cardsInfo = [
   {
@@ -33,7 +34,7 @@ function App() {
             </Row>
             {/* Row 3 con gr'afico */}
             <Row>
-              <h3>GRAFICO ENTERO</h3>
+              <GraphicBox />
             </Row>
           </Col>
           {/* Columna 2 */}
