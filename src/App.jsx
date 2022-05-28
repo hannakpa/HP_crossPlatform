@@ -25,9 +25,9 @@ function App() {
       <NavFixed />
       <Container>
         <Row>
-          <Col sm="5">
+          <Col sm="4">
             {/* Row 1 con texto */}
-            <Row>
+            <Row className="d-sm-none">
               <TextIntro />
             </Row>
             {/* Row 2 con cartas */}
@@ -49,7 +49,7 @@ function App() {
             </Row>
           </Col>
           {/* Columna 2 */}
-          <Col sm="7" className="d-none d-sm-block">
+          <Col sm="8" className="d-none d-sm-block">
             {/* Row 1 con texto */}
 
             {/* Row 2 con grafico entero */}

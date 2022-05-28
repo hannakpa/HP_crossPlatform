@@ -7,7 +7,7 @@ function GraphicBox() {
     datasets: [
       {
         label: "Graphic",
-        data: [2562, 3642, 543],
+        data: [2562, 3642, 1443],
         backgroundColor: ["#007AFF", "#FB8832", "#9013FE"],
         tension: 0.5,
         pointBorderColor: "#6979F8",
@@ -20,7 +20,7 @@ function GraphicBox() {
   const chartOptions = {
     plugins: {
       legend: {
-        display: false,
+        display: true,
       },
       scales: {
         x: {
@@ -29,7 +29,7 @@ function GraphicBox() {
       },
       title: {
         text: "Daily",
-        display: true,
+        display: false,
         fontSize: 20,
       },
     },

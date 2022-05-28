@@ -10,6 +10,8 @@ function ColGraphicBox() {
         label: "Graphic",
         data: [10000, 12000, 13500, 13800, 14000, 16000, 15000, 14000],
         tension: 0.5,
+        fill: true,
+        backgroundColor: "cianblue",
         pointBorderColor: "#6979F8",
         pointBackgroundColor: "#6979F8",
         pointRadius: 5,
