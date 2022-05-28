@@ -2,6 +2,18 @@ import "./styles/fixed/app.css";
 import NavFixed from "./fixed/navbar/NavFixed";
 import { Container, Row, Col } from "react-bootstrap";
 import TextIntro from "./content/text/TextIntro";
+import TransCards from "./content/cards/TransCards";
+
+const cardsInfo = [
+  {
+    numTrans: 35,
+    moment: "LAST MOMENT",
+  },
+  {
+    numTrans: 3,
+    moment: "TODAY",
+  },
+];
 
 function App() {
   return (
@@ -17,7 +29,7 @@ function App() {
             {/* Row 2 con cartas */}
             <Row>
               {/* cada carta es una columna */}
-              <p>cartas</p>
+              <TransCards info={cardsInfo} />
             </Row>
             {/* Row 3 con gr'afico */}
             <Row>
