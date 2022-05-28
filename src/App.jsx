@@ -4,6 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import TextIntro from "./content/text/TextIntro";
 import TransCards from "./content/cards/TransCards";
 import GraphicBox from "./content/charts/GraphicBox";
+import BottomNav from "./fixed/navbar/BottomNav";
 
 const cardsInfo = [
   {
@@ -35,6 +36,10 @@ function App() {
             {/* Row 3 con gr'afico */}
             <Row>
               <GraphicBox />
+            </Row>
+
+            <Row>
+              <BottomNav />
             </Row>
           </Col>
           {/* Columna 2 */}

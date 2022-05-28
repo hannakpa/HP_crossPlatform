@@ -1,6 +1,6 @@
 *{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: rgb(255, 255, 255);
+
 }
 
 
@@ -76,4 +76,30 @@ height: 90%;
   font-family: 'Montserrat';
   text-align: center;
 
+}
+
+.navButton{
+width: 95vw;
+  height: 30px;
+  background-color: #2D14C4;
+  position:fixed;
+  bottom: 1rem;
+  border-radius: 15px;
+height: 62px;
+text-align: center;
+align-self: center;
+padding: 15px;
+justify-content: space-between;
+margin: auto 0.5rem;
+}
+@media(min-width:570px){
+  .navButton{
+    display:none;
+  }
+}
+
+.navButton span {
+  color:white;
+  margin: auto 1.5rem;
+  font-size: 20px;
 }
