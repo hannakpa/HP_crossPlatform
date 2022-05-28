@@ -54,7 +54,7 @@ function App() {
             </Row>
           </Col>
           {/* Columna derecha. Visible a partir de 576px*/}
-          <Col sm="8" className="d-none d-sm-block">
+          <Col sm="7" className="d-none d-sm-block">
             {/* Row 2 con grafico entero */}
             <Row>
               <ColGraphicBox />
