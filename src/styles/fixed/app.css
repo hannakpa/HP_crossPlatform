@@ -63,13 +63,14 @@ font-family: 'Montserrat';
 .graphic-box {
   margin: 18px auto;
   display: inline-block;
-  border-radius: 10%;
+  border-radius: 10px;
   box-shadow: 1px 1px 20px 0 rgba(61, 61, 61, 0.429);
 width: 80%;
 height: 90%;
   padding: 10px;
   font-family: 'Montserrat';
   text-align: center;
+border: 1px solid #E5E5E5;
 
 }
 

@@ -4,6 +4,8 @@ import { Container, Row, Col } from "react-bootstrap";
 import TextIntro from "./content/text/TextIntro";
 import TransCards from "./content/cards/TransCards";
 import GraphicBox from "./content/charts/GraphicBox";
+import PieGraphicBox from "./content/charts/PieGraphicBox";
+import ColGraphicBox from "./content/charts/ColGraphicBox";
 import BottomNav from "./fixed/navbar/BottomNav";
 
 const cardsInfo = [
@@ -34,8 +36,12 @@ function App() {
               <TransCards info={cardsInfo} />
             </Row>
             {/* Row 3 con gr'afico */}
-            <Row>
+            <Row className="d-sm-none">
               <GraphicBox />
+            </Row>
+            {/* aparece a partir de md */}
+            <Row className="d-none d-sm-block">
+              <PieGraphicBox />
             </Row>
 
             <Row>
@@ -45,13 +51,11 @@ function App() {
           {/* Columna 2 */}
           <Col sm="7" className="d-none d-sm-block">
             {/* Row 1 con texto */}
-            <Row>{/* <Header/> */}</Row>
+
             {/* Row 2 con grafico entero */}
             {/* Grafico entero */}
-            <h3>GRAFICO GIGANTE</h3>
-            {/* Row 3 con numeros */}
             <Row>
-              <p>total reveniew</p>
+              <ColGraphicBox />
             </Row>
           </Col>
         </Row>
