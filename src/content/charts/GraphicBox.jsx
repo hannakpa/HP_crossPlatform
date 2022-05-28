@@ -34,18 +34,67 @@ function GraphicBox() {
     },
   };
 
+  const statesD = {
+    labels: ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+    datasets: [
+      {
+        label: "Graphic",
+        data: [15, 16, 15, 14.6, 15, 16, 15.7],
+        tension: 0.5,
+        pointBorderColor: "#6979F8",
+        pointBackgroundColor: "#6979F8",
+        pointRadius: 5,
+      },
+    ],
+  };
+
+  const chartOptionsD = {
+    plugins: {
+      legend: {
+        display: false,
+      },
+      scales: {
+        x: {
+          offset: true,
+        },
+      },
+      title: {
+        text: "Daily",
+        display: true,
+        fontSize: 20,
+      },
+    },
+  };
+
+  const [options, setOptions] = useState(chartOptionsM);
+  const [states, setStates] = useState(statesM);
+
+  function handleDataM() {
+    setOptions(chartOptionsM);
+    setStates(statesM);
+  }
+
+  function handleDataD() {
+    setOptions(chartOptionsD);
+    setStates(statesD);
+  }
+
   return (
     <div className="graphic-box">
       <p className="card-title">Transactions Last Year</p>
       <Row className="p-2">
         <Col>
-          <p className="graph-label">Monthly</p>
+          <p className="graph-label" onClick={handleDataM}>
+            Monthly
+          </p>
         </Col>
         <Col>
-          <p className="graph-label">Daily</p>
+          <p className="graph-label" onClick={handleDataD}>
+            Daily
+          </p>
         </Col>
       </Row>
-      <Linear chartOptions={chartOptionsM} states={statesM} />
+      <Linear chartOptions={options} states={states} />
     </div>
   );
 }
