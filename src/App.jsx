@@ -9,6 +9,7 @@ import PieGraphicBox from "./content/charts/PieGraphicBox";
 import ColGraphicBox from "./content/charts/ColGraphicBox";
 import BottomNav from "./fixed/navbar/BottomNav";
 
+//datos obtenidos de una base de datos. Informaicón sobre el número de transacciones del cliente y el momento en que se efectuó.
 const cardsInfo = [
   {
     numTrans: 35,
@@ -24,37 +25,37 @@ function App() {
   return (
     <div>
       <NavFixed />
+
       <Container>
         <Row>
+          {/* Columna izquierda. Siempre visible.  */}
           <Col sm="4">
             {/* Row 1 con texto */}
             <Row className="d-sm-none">
+              {/* Texto introductorio. Solo en versión móvil */}
               <TextIntro />
             </Row>
-            {/* Row 2 con cartas */}
+            {/* Row 2. Sección que muestra cartas, cada una en una columna */}
             <Row>
-              {/* cada carta es una columna */}
+              {/* paso de información del array cardsInfo del usuario autenticado. TransCards los imprime */}
               <TransCards info={cardsInfo} />
             </Row>
-            {/* Row 3 con gr'afico */}
+            {/* Row 3. Gráfico Lineal. Aparece en versión móvil. Oculta a partir de 576px*/}
             <Row className="d-sm-none">
               <GraphicBox />
             </Row>
-            {/* aparece a partir de md */}
+            {/* Row 4. Gráfico Pie. Aparece solo a partir de 576px*/}
             <Row className="d-none d-sm-block">
               <PieGraphicBox />
             </Row>
-
+            {/* Row 5. Barra de navegación solo para versión móvil. Se oculta a partir de 576px*/}
             <Row>
               <BottomNav />
             </Row>
           </Col>
-          {/* Columna 2 */}
+          {/* Columna derecha. Visible a partir de 576px*/}
           <Col sm="8" className="d-none d-sm-block">
-            {/* Row 1 con texto */}
-
             {/* Row 2 con grafico entero */}
-            {/* Grafico entero */}
             <Row>
               <ColGraphicBox />
             </Row>

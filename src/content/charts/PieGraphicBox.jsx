@@ -1,7 +1,6 @@
 import PieGraph from "./graphics/PieGraph";
-import { Col, Row, Container } from "react-bootstrap";
 
-function GraphicBox() {
+function PieGraphicBox() {
   const states = {
     labels: ["Screens", "PCs", "Phones"],
     datasets: [
@@ -38,10 +37,10 @@ function GraphicBox() {
   return (
     <div className="graphic-box">
       <p className="card-title">Conversion</p>
-
+      {/* El componente PieGraph trata los datos e imprime el Gráfico */}
       <PieGraph chartOptions={chartOptions} states={states} />
     </div>
   );
 }
 
-export default GraphicBox;
+export default PieGraphicBox;

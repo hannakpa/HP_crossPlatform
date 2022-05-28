@@ -5,18 +5,31 @@
 font-family: "Montserrat";
 }
 
-
+/* estilo para el logo */
 .logo-box{
-  width: 40vw !important;
+  width: 50vw !important;
   margin-left: 5px;
 
 }
 
-.logo-box > img{
-  width: 70px;
+/* estilo para la imagen del logo */
+.logo-box img {
+  width: 110px;
   margin: auto 5px;
 }
 
+/* estilo para el texto de intro. Aparece antes de 576px. */
+.text-intro{
+  margin: 2rem;
+}
+
+.text-intro h1 {
+  font-weight: bolder;
+}
+
+
+
+/* contenedor de las tarjetas con cifras. Aparece en versión móvil y fullscreen */
 .card-box{
   margin: 18px auto;
   display:inline-block;
@@ -29,39 +42,41 @@ font-family: "Montserrat";
       text-align: center;
 }
 
-.indice-text{
 
+/* numero dentro de card-box */
+.indice-text{
 font-family: 'Montserrat';
   font-style: normal;
   font-weight: 500;
   font-size: 48px;
   line-height: 60px;
-  /* identical to box height, or 125% */
   color: #6979F8;
 }
 
+/* titulo de la card-box */
 .card-title{
   font-weight: 500;
   font-size: 20px;
   margin-top: 10px;
 }
 
+/* botón de selección para elegir los datos que aparecerán en el gráfico */
 .graph-label{
   text-decoration: underline;
   text-decoration-color: #6979F8;
   text-decoration-thickness: 2px;
 }
 
+/* texto descriptivo dentro de la tarjeta */
 .desc-text{
-
     font-weight: lighter;
     font-size: 15px;
-
       text-align: center;
       color: gray
 
 }
 
+/* contenedor del gráfico  */
 .graphic-box {
   margin: 18px auto;
   display: inline-block;
@@ -76,6 +91,7 @@ border: 1px solid #E5E5E5;
 
 }
 
+/* barra de navegación en versión móvil */
 .navButton{
 width: 95vw;
   height: 30px;
@@ -96,8 +112,28 @@ margin: auto 0.5rem;
   }
 }
 
+
+/* iconos/botones para la barra de navegación móvil  */
 .navButton span {
   color:white;
-  margin: auto 1.5rem;
+  margin: auto 2rem;
   font-size: 20px;
 }
+
+
+/* estilos para textos de la columna derecha. visible en fullscreen  */
+.total-graphic-box span {
+  color: grey;
+  font-size: 14px;
+}
+
+.total-graphic-box h3 {
+  font-weight: bolder;
+}
+
+/* estilo para caja de la columna derecha */
+.col-der-box {
+margin-left: 3rem;
+  padding: 1rem
+}
+

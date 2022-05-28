@@ -1,3 +1,5 @@
+//Este componente recibe através de propiedades la información del usuario autenticado, recibida en el componente principal, App. El componente trata los datos del array e imprime a cada uno en una carta.
+
 function TransCards({ info }) {
   let showCards = info.map((card, index) => {
     return (
